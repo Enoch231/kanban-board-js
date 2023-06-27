@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>NotNotion</title>
+  </head>
+  <body>
+    <main>
+      <section class="outer_section">
+        <section class="inner_section">
+          <div class="heading">
+            <h1>notNotion</h1>
+            <p class="sub-heading">
+              Web Based Kanban Style Application To Handle Project Progress
+            </p>
+          </div>
+
+          <div class="kanban">
+            <div class="taskbox">
+              <div class="title">
+                <p class="todo">To Do</p>
+                <p class="todo_count"></p>
+              </div>
+              <div class="cards to_do" data-id="0"></div>
+              <div class="search">
+                <form class="add">
+                  <input
+                    type="text"
+                    name="task"
+                    placeholder="New Task"
+                    autocomplete="off"
+                    maxlength="30"
+                  />
+                  <button class="bi bi-plus" data-id="0" name="submit"></button>
+                </form>
+              </div>
+            </div>
+
+            <div class="taskbox">
+              <div class="title">
+                <p class="in_progress">In Progress</p>
+                <p class="progress_count"></p>
+              </div>
+              <div class="cards pending" data-id="1"></div>
+
+              <div class="search">
+                <form class="add">
+                  <input
+                    type="text"
+                    name="task"
+                    placeholder="New Task"
+                    autocomplete="off"
+                    maxlength="30"
+                  />
+                  <button class="bi bi-plus" data-id="1" name="submit"></button>
+                </form>
+              </div>
+            </div>
+
+            <div class="taskbox">
+              <div class="title">
+                <p class="completed">Completed</p>
+                <p class="completed_count"></p>
+              </div>
+              <div class="cards completed_tasks" data-id="2"></div>
+              <div class="search">
+                <form class="add">
+                  <input
+                    type="text"
+                    name="task"
+                    placeholder="New Task"
+                    autocomplete="off"
+                    maxlength="30"
+                  />
+                  <button class="bi bi-plus" data-id="2" name="submit"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
